@@ -1,0 +1,28 @@
+import React from "react"
+import { Text, StyleSheet, View } from "react-native"
+
+export default props=> {
+    return (
+        <View style={style.display}>
+            <Text 
+            style={style.displayValue}
+            numberOfLines={1}>    
+                {props.value}
+            </Text>
+        </View>
+    )
+}
+
+const style = StyleSheet.create({
+    display: {
+        flex: 1,
+        padding: 20,
+        justifyContent: "center",
+        backgroundColor: "#24367D",
+        alignItems: 'flex-end'
+    },
+    displayValue: {
+        fontSize: 60,
+        color: '#FFFF'
+    }
+})
